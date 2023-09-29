@@ -21,10 +21,11 @@ class MainActivity : AppCompatActivity() {
     private lateinit var upButton: Button
     private lateinit var downButton: Button
     private lateinit var selectButton: Button
+    private lateinit var homeButton: Button
     private lateinit var displayTextView: TextView
     private lateinit var receivedDataTextView: TextView // New TextView for received data
 
-    private val UDP_SERVER_PORT = 8887
+    private val UDP_SERVER_PORT = 8888
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,12 +35,14 @@ class MainActivity : AppCompatActivity() {
         upButton = findViewById(R.id.upButton)
         downButton = findViewById(R.id.downButton)
         selectButton = findViewById(R.id.selectButton)
+        homeButton = findViewById(R.id.homeButton)
         displayTextView = findViewById(R.id.displayTextView)
         receivedDataTextView = findViewById(R.id.receivedDataTextView)
 
         upButton.setOnClickListener { sendUDP("up") }
         downButton.setOnClickListener { sendUDP("down") }
         selectButton.setOnClickListener { sendUDP("select") }
+        homeButton.setOnClickListener { sendUDP("home") }
 
         // Start a thread to listen for incoming UDP data
         Thread {

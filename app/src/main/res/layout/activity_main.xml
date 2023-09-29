@@ -45,9 +45,10 @@
         android:id="@+id/selectButton"
         android:layout_width="134dp"
         android:layout_height="80dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="28dp"
         android:text="Select"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/downButton" />
 
@@ -55,12 +56,12 @@
         android:id="@+id/displayTextView"
         android:layout_width="379dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="28dp"
         android:text=""
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/selectButton" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeButton" />
 
     <TextView
         android:id="@+id/receivedDataTextView"
@@ -72,5 +73,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/displayTextView" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
