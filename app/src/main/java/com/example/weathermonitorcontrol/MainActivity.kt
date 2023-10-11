@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
                 receiveSocket.receive(receivePacket)
                 val receivedData = String(buffer, 0, receivePacket.length, StandardCharsets.UTF_8)
                 runOnUiThread {
-                    receivedDataTextView.text = "Received Data: $receivedData"
+                    receivedDataTextView.text = "Received Data: \n$receivedData"
                 }
             }
         }.start()

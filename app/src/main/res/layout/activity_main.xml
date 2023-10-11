@@ -56,23 +56,23 @@
         android:id="@+id/displayTextView"
         android:layout_width="379dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="12dp"
         android:text=""
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/homeButton" />
 
     <TextView
         android:id="@+id/receivedDataTextView"
-        android:layout_width="388dp"
-        android:layout_height="98dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="381dp"
+        android:layout_height="142dp"
+        android:layout_marginBottom="48dp"
         android:text=""
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/displayTextView" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="15dp" />
 
     <Button
         android:id="@+id/homeButton"
